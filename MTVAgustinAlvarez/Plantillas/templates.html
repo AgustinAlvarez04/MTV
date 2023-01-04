@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTV Agustin Alvarez</title>
+
+</head>
+<body style="text-align: center; background-color: #ff4d4d;">
+    <h1 style="background-color: #1900ff; color: #ff0000; border-radius: 30px; margin: 1em; padding: 1em;"> LISTA FAMILIARES</h1>
+    <p>
+        <ul style="padding: 1em; color: #02007c; background-color: #021d94; list-style: none; margin: 100px; border-radius: 30px;">
+            {% for familiar in lista_familiares %} 
+            <li style="font-size: 200%;">
+                {{familiar.apellido}} <br> {{familiar.nombre}} <br> {{familiar.nacimiento}}
+            </li><br>
+            {% endfor %}
+        </ul>
+    </p>
+</body>
+</html>
